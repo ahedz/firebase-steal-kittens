@@ -1,3 +1,5 @@
+script: skip
+install: skip
 before_deploy: "echo 'ready?'"
 deploy:
   provider: firebase
