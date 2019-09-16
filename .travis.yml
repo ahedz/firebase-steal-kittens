@@ -1,5 +1,8 @@
+language: node_js
+node_js:
+  - 7
 script: skip
-install: skip
+install: "npm --prefix ./functions run build"
 before_deploy: "echo 'ready?'"
 deploy:
   skip_cleanup: true
