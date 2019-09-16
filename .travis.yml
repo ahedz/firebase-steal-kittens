@@ -1,9 +1,8 @@
 language: node_js
 node_js:
   - 7
-install: "npm --prefix ./functions install"
-script: "npm --prefix ./functions run build" 
-before_deploy: "echo 'ready?'"
+install: skip
+script: skip 
 deploy:
   skip_cleanup: true
   provider: firebase
